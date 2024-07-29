@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin: 10px 0;
+        }
+        label {
+            display: inline-block;
+            width: 5vw;
 
+        
+        }
+    </style>
+</head>
+<body>
+    <form action="#" id="nameform">
+        <label for="name">Имя:</label><input type="text" id="name" required pattern="[a-zA-Zа-яА-Я]+"><br>
+        <label for="lastname">Фамилия: </label><input type="text" id="lastname" required pattern="[a-zA-Zа-яА-Я]+"><br>
+        <input type="submit" value="Отправить" id="submit"></input><br>
+        <span>Ответ: </span><span class="result"></span>
+        <script src="js/main.js"></script>
+    </form>
+    
+</body>
+</html>
